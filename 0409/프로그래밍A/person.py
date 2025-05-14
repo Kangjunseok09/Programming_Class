@@ -1,0 +1,6 @@
+f2 = open("0409/person.txt", 'r')
+addr = f2.readline() 
+name = f2.readline()
+f2.close()
+print("주소: ", addr)
+print("이름: ", name)
