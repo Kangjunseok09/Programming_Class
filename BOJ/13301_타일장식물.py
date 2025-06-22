@@ -15,4 +15,3 @@ elif n == 2:
     sum = fib[0] + fib[1]
 
 print(sum * 2 + 2)
-
