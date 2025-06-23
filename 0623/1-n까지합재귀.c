@@ -11,6 +11,6 @@ int main(void){
 }
 
 int sum(int a){
-  if (a==0) return a;
+  if (a==1) return a;
   return sum(a-1) + a;
 }
