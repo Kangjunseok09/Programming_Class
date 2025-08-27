@@ -1,10 +1,18 @@
 s = input()
 word = input()
-while word in s:
-  if s == "":
-    print("FRULA")
-  if s == s.replace(word, ""):
-    break;
-  else:
-    s = s.replace(word, "")
-print(s)
+
+stack = []
+length = len(word)
+last = word[-1]
+for ch in s:
+  stack.append(ch)
+
+  if len(stack) >= length:
+    if stack[-length:] == list(word): 
+      for i in range(length):
+        stack.pop()
+
+if stack:
+  print("".join(stack))
+else:
+  print("FRULA")
